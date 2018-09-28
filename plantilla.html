@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>holi</title>
+	<title>Template</title>
 </head>
 <body style="background-color: black ">
 
@@ -43,4 +43,112 @@
 
 
 </body>
+<script src="../Biblioteca/SuperUI.js"></script>
+<script>
+SUI("p").stl("lineHeight","200px")
+SUI("p").stl({"color":"red"})
+SUI("div").dom({"p":"hola","h2":"titulo"})
+
+
+
+// Patron Module
+
+// (function(d){
+// 	d.querySelector("p").style.color="red"
+// })(window.document)
+
+// // Patron Revelador
+
+// (function(d){
+// 	function private(arg){
+// 		console.log(arg)
+// 	}
+// 	function public(a){
+// 		var b = a + " hola"
+// 		private(b)
+// 	}
+// 	window.public=public
+// })()
+// var intermediario = {
+// 	subs:{},
+// 	suscribir:function(sub,accion){
+// 		if(!this.subs[sub]){
+// 			this.subs[sub] =[]
+// 		console.log(this.subs,sub,this.subs[sub])
+// 		}
+// 		this.subs[sub].push(accion)
+// 	},
+// 	publicar:function(sub,datos){
+// 		if (!this.subs[sub] || !this.subs[sub].length < 1) {
+// 			console.error("Falta suscripción",this.subs[sub])	
+// 		}
+// 		this.subs[sub].forEach(function(){
+// 			publicar(data)
+// 		})
+// 	}
+// }
+// intermediario.suscribir("nombre",alert)
+// intermediario.publicar("nombre","Hola Mundo")
+
+
+
+
+
+
+// // Priorizar busqueda de variables en ambito local
+// function local(){
+// 	d = window.document
+// }
+
+// //Poner en una variable el resultado de un calculo
+
+// var a = 1
+// var b = 2
+// function suma(){
+// 	console.log(a+b)
+// }
+
+// //Lo que no cambia, se consulta una sola vez
+// var cosa = [1,2,3,4,5]
+// var cosaCont = cosa.length
+// for (var i = 0; i < cosaCont; i++) {
+// 	console.log(cosa[i])
+// }
+
+// if(localStorage){}
+
+// //Ir de lo frecuente a lo menos frecuente
+// var habitual = confirm("Aceptas?")
+// if(habitual){
+
+// }else{
+
+// }
+
+// //ELSE Y RETURN
+// var cosa
+// if(cosa){
+// 	return true
+// }
+// return false
+
+// //Preguntar y asignar o solo asignar
+
+// var otrCosa
+
+// var variable = otrCosa || cosa
+
+// //Por ahora, el for sigue siendo más eficiente que el forEach o el filter
+
+
+// //evitar el switch case y evitar la cadena de condicionales (if) siempre será una buena idea, podemos hacerlo con objetos
+
+// function opt(a){
+// 	var obj={
+// 		hola:"hola",
+// 		chau:"chau"
+// 	}
+// 	console.log(obj[a])
+// }
+</script>
 </html>
